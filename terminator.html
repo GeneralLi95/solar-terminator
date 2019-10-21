@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>晨昏线测试</title>
+    <link rel="stylesheet" href="dist/leaflet.css"/>
+    <link rel="stylesheet" href="dist/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/jquery-ui.css">
+    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="dist/pc.css">
+
+    <script src="dist/jquery.min.js"></script>
+    <script src="dist/jquery-ui.js"></script>
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+
+        .night1 {
+            fill: #646464;
+            fill-opacity: .3;
+        }
+
+        .night2 {
+            fill: #53ff17;
+            fill-opacity: .3;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+<div style="padding-top: 0px;
+position: absolute;
+background-color: #fbfbfb;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;">
+
+    <div id="map"></div>
+
+
+    <!--日期选择选择器-->
+    <div class="date-set" style="position: absolute;top: 30px;left: 60px">
+        <input type="button" id="datePicker" style="font-size: 18px;cursor: pointer">
+    </div>
+
+    <div class="date-set">
+        <input type="button" id="datePicker" style="font-size: 18px;cursor: pointer">
+    </div>
+
+
+    <div id="showTime">
+        <input id="cuztime" type="text" disabled>
+    </div>
+
+    <!--小时选择-->
+    <div id="Time" style="position: absolute;top: 30px;left: 200px"></div>
+
+</div>
+
+
+
+
+</body>
+
+
+
+<!--
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+-->
+
+<script src="dist/leaflet.js"></script>
+<script src="dist/moment.min.js"></script>
+<script src="dist/d3.v3.min.js"></script>
+<script src="dist/d3.geo.projection.v0.min.js"></script>
+<script src="dist/topojson.v1.min.js"></script>
+<script src="index2.js"></script>
+
+</html>
+
+<!-- 项目由两个开源项目 D3 + leaflet -->
+<!-- 同时用到jQury框架 -->

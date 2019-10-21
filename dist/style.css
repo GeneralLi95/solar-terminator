@@ -1,0 +1,444 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+	font-size: 1em;
+}
+
+.ui-draggable, .ui-droppable {
+	background-position: top;
+}
+.show {
+	animation-name: show;
+}
+
+.leaflet-marker-pane {
+	position: relative;
+	z-index: 998;!important;
+}
+
+
+.city-content {
+
+	width: 220px;
+	height: 300px;
+	border-radius: 2px 2px 2px 2px;
+	background: #ffffff;
+	float: left;
+	position: absolute;
+	top: 0px;
+	right: 185px;
+	border: 1px solid rgba(0,0,0,.35);
+	box-shadow: 2px 4px 2px rgba(0,0,0,.85);
+	z-index: 1012;
+}
+
+.select-arrow {
+	background-image: url("./images/xiala.png") !important;
+	width: 10px !important;
+	height: 9px !important;
+	float: left;
+	position: relative;
+	top: 11px;
+	margin-left: 4px;
+}
+
+.right-bound {
+	border-radius: 0 2px 2px 0;
+	width: 5px;
+	height: 34px;
+	float: left;
+}
+
+.popup-close {
+	cursor: pointer;
+	background-image: url("./images/guanbi.png");
+	background-repeat: no-repeat;
+	border: 0;
+	display: block;
+	float: right;
+	margin-right: 7px;
+	margin-top: 3px;
+	width: 6px;
+	height: 10px;
+}
+
+.play-button {
+	background-image: url("./images/play.png");
+	width: 28px;
+	height: 28px;
+}
+
+.Content a {
+	text-decoration: none;
+	cursor: pointer;
+	line-height: 24px;
+	margin-right: 6px;
+	margin-left: 6px;
+	color: #4976a0;
+	vertical-align: baseline;
+	font-size: 14px;
+}
+
+.Content a:hover {
+	text-decoration: underline !important;
+}
+
+.head {
+	left: 0;
+	top: 0;
+	position: fixed;
+	min-width: 960px;
+	height: 60px;
+	overflow: visible;
+	z-index: 1012;
+	display: block;
+	width: 100%;
+	padding: 0;
+	background-color: #4976a0;
+}
+.head h4 {
+	position: relative;
+	font-size: 16px;
+	font-family: inherit;
+	font-weight: bold;
+	top: -3px;
+	padding: 2px 7px;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	border-top: 2px solid transparent;
+	color: #fbfbfb;
+}
+
+.logo {
+	font-size: 26px;
+	margin: 5px 50px 0 20px;
+	color: #fbfbfb;
+	display: inline-block;
+	padding-top: 10px;
+	font-family: inherit;
+	font-weight: bold;
+	float: left;
+}
+
+.set-bar {
+	box-sizing: border-box;
+	margin: 0px 30px 0 60px;
+	top:2px;
+	box-shadow: 2px 4px 2px rgba(0,0,0,.85);
+	float: left;
+}
+
+.set-bar a {
+	float: left;
+	display: inline-block;
+	height: 34px;
+	background-color: #dcdcdd;
+	color: #666;
+	font-size: 12px;
+	text-decoration: none;
+	vertical-align: middle;
+	position: relative;
+	cursor: pointer
+}
+.set-bar a span {
+	font-size: 12px;
+	position: relative;
+	top: 10px;
+	float: left
+}
+.set-bar div {
+	display: inline-block;
+	float: left;
+	border-radius: 2px;
+}
+.set-bar div span {
+	float: left;
+	width: 5px;
+	height: 34px;
+	padding-left: 7px;
+	background: #dcdcdd
+}
+.span-left {border-radius: 2px 0 0 2px;}
+.span-right {border-radius: 0 2px 2px 0;}
+
+.date-set {
+	float: left;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+.set-head-scope {
+	margin-top: 5px;
+	border-bottom: 1px solid #c1c1c1;
+	padding-bottom: 4px;
+}
+
+.pp {
+	float: left;
+	margin-top: -8px;
+	margin-left: 60px;
+}
+
+.pp a {
+	margin-top: 5px;
+	margin-left: 5px;
+	cursor: pointer
+}
+
+
+.b-r {
+
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.chartTitle {
+	display: block;
+	margin-top: -24px;
+	color: #ffffff;
+}
+
+.tool-bar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	width: 175px;
+	height: auto;
+	background-color: #f4f4f4;
+	border: 1px solid rgba(48,64,90,.5);
+	display: none;
+}
+.tool{
+	width: 177px;
+	height: 60px;
+	font-weight: 600;
+	font-family: "黑体",sans-serif;
+	float: right;
+	display: block;
+	font-size: 24px;
+	color: #ffffff;
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	right: 0;
+	z-index: 1005;
+	text-align: center;
+}
+.tool:hover{
+	background-color: #30405a;!important;
+}
+.tool img {
+	float: left;
+	margin: 5px 10px 0 8px;
+}
+.tool div {
+	margin-top: 18px;
+	float: left;
+}
+.tool-bar a {
+	cursor: pointer;
+	display: block;
+	width: 100%;
+	height: 30px;
+	padding: 5px 0 5px 10px;
+}
+
+.tool-bar a span {
+	display: block;
+	float: left;
+	background-image: url("./images/toolbarIcon.png");
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+}
+.tool-bar a:hover {
+	cursor: pointer;
+	display: block;
+	width: 100%;
+	height: 30px;
+	padding: 5px 0 5px 10px;
+	background-color: #4976a0;
+}
+.tool-bar a:hover span {
+	float: left;
+	background-image: url("./images/toolicon.png");
+	background-repeat: no-repeat;
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+
+.tool-name {
+	margin: 5px 0 0 5px;
+	height: 30px;
+	float: left;
+	font-size: 14px;
+}
+.tool-bar a:hover .tool-name {
+	color: #ffffff;
+}
+.curve-bt {
+	background-position: -0px;
+}
+.tool-bar a:hover .curve-bt{
+	background-position: 0px;
+}
+.circle-bt {
+	background-position: -77px;
+}
+.tool-bar a:hover .circle-bt {
+	background-position: -55px;
+}
+.block-bt {
+	background-position: -153px;
+}
+.tool-bar a:hover .block-bt {
+	background-position: -103px;
+}
+.set-bt {
+	background-position: -283px;
+}
+.tool-bar a:hover .set-bt {
+	background-position: -153px;
+}
+.calender-bt {
+	background-position: -320px;
+}
+.tool-bar a:hover .calender-bt {
+	background-position: -206px;
+}
+.muCuvze-bt {
+	background-position: -403px;
+}
+.tool-bar a:hover .muCuvze-bt {
+	background-position: -259px;
+}
+.forecast-bt {
+	background-position: -497px;
+}
+.tool-bar a:hover .forecast-bt {
+	background-position: -313px;
+}
+
+
+.muBt span {
+	margin: 5px;
+	float: left;
+	display: block;
+	border: 2px solid rgba(0,0,0,.5);
+	border-radius: 4px;
+	background-color: #ffffff;
+	cursor: pointer;
+	width: 26px;
+	height: 26px;
+	background-image: url('./images/spritesheet.png')!important;
+}
+.muBt-add {
+	background-position: -122px;
+}
+.muBt-clear {
+	background-position: -181px;
+}
+
+#map {
+	float: left;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+#timeController {
+	float: left;
+	position: absolute;
+	margin-top: 80px;
+	z-index: 999;
+	width: 100%;
+}
+
+.chart {
+	width:100%;
+	height:100%;
+	position: relative;
+	bottom: 0;
+	float: left;
+	z-index: 999;
+}
+
+/*#weekVol {*/
+	/*width:100%;*/
+	/*height:100%;*/
+	/*position: relative;*/
+	/*float: left;*/
+	/*z-index: 999;*/
+/*}*/
+
+#Time {
+	width:80%;
+	margin-left: 25px;
+	margin-top: 10px;
+	float: left;
+	height: 10px;
+	border: 2px solid rgba(0,0,0,0.4);
+
+}
+#Time a {
+	/*background-image: url("./images/zhoubiaoji.png");*/
+	background-repeat: no-repeat;
+	background-position: -1px;
+	height: 30px;
+	border: 0;
+	background-color: rgba(255,255,255,0);
+	margin-top: -2px;
+	width: 25px;
+}
+#Time a:hover {
+	background-position: -36px;
+}
+#Time a:focus {
+	outline: none;
+}
+
+#showTime {  /*显示分钟位置控制*/
+	position: absolute;
+	background-color: #ffffff;
+	border: 1px;
+	top: 65px;
+	left: 210px;
+}
+
+#cuztime {  /*显示分钟文本框*/
+	width: 45px;
+	font-size: 16px;
+	text-align: center;
+}
+
+.ng-hide {
+	height: 60px;
+}
+.nudt-logo {
+	width: 200px;
+	height: 50px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.qrContent {
+	position: absolute;
+	right: 150px;
+	bottom: 80px;
+	z-index: 1100;
+	width: 200px;
+	height: 240px;
+	display: none;
+	border-radius: 6px;
+	border: 1px solid rgba(0,0,0,.3);
+	line-height: 20px;
+	box-shadow: 0 3px 7px rgba(0,0,0,.3);
+	background-color: #ffffff;
+	background-clip: padding-box;
+	outline: 0;
+}
